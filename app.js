@@ -18,7 +18,7 @@ app.use("/users", usersRouter);
 app.use("/products", productsRouter);
 
 app.get("/", (req, res) => {
-  res.send("Scatch project");
+  res.render("index", { error: "Some error message" });
 });
 
 app.listen(3000);
